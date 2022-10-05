@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const SingleBlog = ({ blog: { title, body } }) => {
+const SingleBlog = ({ blog: { title, body, id } }) => {
+    const navigate = useNavigate();
+
+    const detailsHandler = ()=> {
+        navigate(`details/${id}`)
+    }
 
     return (
 
@@ -9,7 +15,7 @@ const SingleBlog = ({ blog: { title, body } }) => {
                 <h2 className="card-title">{title}</h2>
                 <p>{body.length > 50 ? body.slice(0, 50) : body}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button onClick={()=> detailsHandler()} className="btn btn-primary">Details</button>
                 </div>
             </div>
         </div>
