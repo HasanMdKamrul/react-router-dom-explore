@@ -1,0 +1,9 @@
+.active {
+  text-decoration: underline;
+  color: rgb(85, 190, 37);
+}
+
+.pending {
+  text-emphasis: none;
+  color: inherit;
+}
