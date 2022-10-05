@@ -14,7 +14,7 @@ const NavBar = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><NavLink className={({isActive,isPending})=> isActive ? "active" : isPending ? "pending" : ""} to='/'>Homepage</NavLink></li>
                         <li><NavLink className={({isActive})=> isActive ? "active" : ""} to="/contact">Contact</NavLink></li>
-                        <li><NavLink className={({isActive})=> isActive ? "active" : ""} to='/about' >About</NavLink></li>
+                        <li><NavLink className={({isActive})=> isActive ? "active" : ""} to='/about' >Log In</NavLink></li>
                     </ul>
                     </div>
                 </div>
